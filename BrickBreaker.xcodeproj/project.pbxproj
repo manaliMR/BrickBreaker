@@ -17,7 +17,7 @@
 		D19A8DE7215307C80093FED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19A8DE5215307C80093FED8 /* LaunchScreen.storyboard */; };
 		D19A8DF2215307C80093FED8 /* BrickBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A8DF1215307C80093FED8 /* BrickBreakerTests.swift */; };
 		D19A8DFD215307C80093FED8 /* BrickBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A8DFC215307C80093FED8 /* BrickBreakerUITests.swift */; };
-		D19A8E0D21545C7A0093FED8 /* Minion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19A8E0C21545C7A0093FED8 /* Minion.jpg */; };
+		D19A8E0F21547AA50093FED8 /* Minion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19A8E0E21547AA50093FED8 /* Minion.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		D19A8DF8215307C80093FED8 /* BrickBreakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickBreakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19A8DFC215307C80093FED8 /* BrickBreakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickBreakerUITests.swift; sourceTree = "<group>"; };
 		D19A8DFE215307C80093FED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D19A8E0C21545C7A0093FED8 /* Minion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Minion.jpg; sourceTree = "<group>"; };
+		D19A8E0E21547AA50093FED8 /* Minion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Minion.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				D19A8DDE215307C50093FED8 /* GameViewController.swift */,
 				D19A8DE0215307C50093FED8 /* Main.storyboard */,
 				D19A8DE3215307C80093FED8 /* Assets.xcassets */,
-				D19A8E0C21545C7A0093FED8 /* Minion.jpg */,
+				D19A8E0E21547AA50093FED8 /* Minion.jpg */,
 				D19A8DE5215307C80093FED8 /* LaunchScreen.storyboard */,
 				D19A8DE8215307C80093FED8 /* Info.plist */,
 			);
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19A8DE2215307C50093FED8 /* Main.storyboard in Resources */,
-				D19A8E0D21545C7A0093FED8 /* Minion.jpg in Resources */,
+				D19A8E0F21547AA50093FED8 /* Minion.jpg in Resources */,
 				D19A8DD9215307C50093FED8 /* GameScene.sks in Resources */,
 				D19A8DE4215307C80093FED8 /* Assets.xcassets in Resources */,
 				D19A8DE7215307C80093FED8 /* LaunchScreen.storyboard in Resources */,
