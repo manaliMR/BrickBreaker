@@ -23,4 +23,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsBody = border
         self.physicsWorld.contactDelegate = self
     }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        let firstObject = contact.bodyA.node?.name
+        let secondObject = contact.bodyB.node?.name
+        
+        if firstObject == "Ball" && secondObject == "Brick" {
+            contact.bodyB.node?.removeFromParent()
+        }
+    }
 }
