@@ -24,6 +24,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        for touch in touches {
+            let touchLocation = touch.location(in: self)
+            paddle.position.x = touchLocation.x
+        }
+    }
+    
     func didBegin(_ contact: SKPhysicsContact) {
         let firstObject = contact.bodyA.node?.name
         let secondObject = contact.bodyB.node?.name
