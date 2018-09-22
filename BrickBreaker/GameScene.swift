@@ -28,7 +28,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         for touch in touches {
             let touchLocation = touch.location(in: self)
-            paddle.position.x = touchLocation.x
+            if touchLocation.x > self.frame.width/2 - 100 {
+                paddle.position.x = self.frame.width/2 - 100
+            } else if touchLocation.x < -(self.frame.width/2) + 100 {
+                paddle.position.x = -(self.frame.width/2) + 100
+            } else {
+                paddle.position.x = touchLocation.x
+            }
         }
     }
     
