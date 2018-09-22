@@ -25,7 +25,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        for touch in touches {
+            let touchLocation = touch.location(in: self)
+            if touchLocation.x > self.frame.width/2 - 100 {
+                paddle.position.x = self.frame.width/2 - 100
+            } else if touchLocation.x < -(self.frame.width/2) + 100 {
+                paddle.position.x = -(self.frame.width/2) + 100
+            } else {
+                paddle.position.x = touchLocation.x
+            }
+        }
+    }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             let touchLocation = touch.location(in: self)
             if touchLocation.x > self.frame.width/2 - 100 {
