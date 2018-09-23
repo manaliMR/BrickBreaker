@@ -69,6 +69,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if firstObject == "Ball" && secondObject == "Brick" {
             contact.bodyB.node?.removeFromParent()
         }
+        
         if firstObject == "Ball" && secondObject == "DangerLine" {
             contact.bodyA.velocity = CGVector(dx: 0, dy: 0)
             playAgainLabel.isHidden = false
@@ -79,6 +80,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.removeAllChildren()
         
         let gameScene:GameScene = GameScene(fileNamed: "GameScene")!
-        let 
+        let transition = SKTransition.fade(withDuration: 1.0)
+        gameScene.scaleMode = SKSceneScaleMode.fill
+        self.view!.presentScene(gameScene, transition:transition)
     }
 }
