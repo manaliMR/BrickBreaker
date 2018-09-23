@@ -17,9 +17,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     override func didMove(to view: SKView) {
-        ball = self.childNode(withName: "Ball") as! SKSpriteNode
-        paddle = self.childNode(withName: "Paddle") as! SKSpriteNode
-        playAgainLabel = self.childNode(withName: "playAgain") as! SKLabelNode
+        ball = (self.childNode(withName: "Ball") as! SKSpriteNode)
+        paddle = (self.childNode(withName: "Paddle") as! SKSpriteNode)
+        playAgainLabel = (self.childNode(withName: "playAgain") as! SKLabelNode)
         ball.physicsBody?.applyImpulse(CGVector(dx: 50, dy: 50))
         
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
@@ -69,7 +69,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if firstObject == "Ball" && secondObject == "Brick" {
             contact.bodyB.node?.removeFromParent()
         }
-        
+         
         if firstObject == "Ball" && secondObject == "DangerLine" {
             contact.bodyA.velocity = CGVector(dx: 0, dy: 0)
             playAgainLabel.isHidden = false
